@@ -3,11 +3,26 @@
 <head>
 <title>Bridging Languages</title>
 </head>
+
+<script>
+  function search() {
+    var input = document.getElementById('text-box');
+    
+  }
+  function Dictionary() {
+    dict = new ActiveXObject("Words");
+    dict.Run("c:/git/seniorProjects/senior-project-bridging-languages/meanings.exe", 1, false);
+    }
+</script>
+
 <body>
     <div class="topnav">
         <a class="active" href="WebMain.html">Home</a>
         <a href="latinTexts.html">Latin Texts</a>
         <a href="latinSongs.html">Latin Songs</a>
       </div>
+      
+      <input type="text" id="text-box" size="20" value="Hello world!">
+      <button onclick="search()">Search</button>
 </body>
 </html>
