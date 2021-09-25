@@ -45,7 +45,7 @@
 <script>
   function search() {
     var input = document.getElementById('text-box');
-  
+    console.log("heyo");
   }
 
   function Dictionary() {
@@ -59,10 +59,11 @@
         <li><a class="active" href="WebMain.html">Home</a></li>
         <li><a href="latinTexts.html">Latin Texts</a></li>
         <li><a href="latinSongs.html">Latin Songs</a></li>
+        <li><a href="GoogleMyMaps.html">Map</a></li>
         <li style="float:right"><a class="active" href="about.html">About</a></li>
     </ul>
       
       <input type="text" id="text-box" size="20" value="">
-      <button onclick="search()"><button class="button">Search</button>
+      <button onclick="search()" class = "button">Search</button>
 </body>
 </html>
