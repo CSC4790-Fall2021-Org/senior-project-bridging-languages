@@ -61,15 +61,28 @@
   display: table;
   clear: both;
 }
+
+#word{
+  margin-top: 2mm;
+}
 </style>
 
 <script>
-  function search() {
-    var input = document.getElementById('text-box');
-    console.log("heyo");
-    var shell = new ActiveXObject("words.exe");  
-    var commandtoRun = "C:\\git\seniorProjects\senior-project-bridging-languages\\words.exe";
-    oShell.ShellExecute(commandtoRun,"","","open","1");
+  function searchWords() {
+    var input = document.getElementById('word').value;
+    input=input.toLowerCase();
+    document.write(input);
+
+    var exec = require('child_process').exec, child;
+
+    child = exec('cat *.js bad_file | wc -l',
+    function (error, stdout, stderr) {
+        console.log('stdout: ' + stdout);
+        console.log('stderr: ' + stderr);
+        if (error !== null) {
+             console.log('exec error: ' + error);
+        }
+    });
   }
 </script>
 
@@ -81,9 +94,10 @@
     <li><a href="GoogleMyMaps.html">Map</a></li>
     <li style="float:right"><a class="active" href="about.html">About</a></li>
   </ul>
-      
-  <input type="text" id="text-box" size="20" value="">
-  <button onclick="search()" class="button">Search</button>
+
+  <form>
+    <input id = "word" type="text" name="t" onchange="searchWords()" >
+  </form>
   
   <h1>M. Cornelius Fronto</h1>
   <h2>Liber I</h2>
