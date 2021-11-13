@@ -136,6 +136,23 @@
   cursor: pointer;
 }
 
+*{
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 #word{
   margin-top: 2mm;
 }
@@ -171,37 +188,73 @@
         <div class="numbertext">1 / 3</div>
         <iframe width="1020" height="550" src="https://www.youtube.com/embed/SaLlf2803cs">
         </iframe>
-        <p>
-          00:17 Ὅσον ζῇς φαίνου
-        </p>
-        <p>
-          00:24 μηδὲν ὅλως σὺ λυποῦ
-        </p>
-        <p>
-          00:32 πρὸς ὀλίγον ἐστὶ τὸ ζῆν
-        </p>
-        <p>
-          00:39 τὸ τέλος ὁ χρόνος ἀπαιτεῖ.
-        </p>
-        <p>
-          04:18  Ὅσον ζῇς φαίνου
-        </p>
-        <p>
-          04:25 μηδὲν ὅλως σὺ λυποῦ
-        </p>
-        <p>
-          04:32 πρὸς ὀλίγον ἐστὶ τὸ ζῆν
-        </p>
-        <p>
-          04:39 τὸ τέλος ὁ χρόνος ἀπαιτεῖ.
-        </p>
+        <div class="row">
+          <div class="column" style="background-color:#aaa;">
+            <p> Ὅσον ζῇς φαίνου</p>
+            <p>μηδὲν ὅλως σὺ λυποῦ</p>
+            <p>πρὸς ὀλίγον ἐστὶ τὸ ζῆν</p>
+            <p>τὸ τέλος ὁ χρόνος ἀπαιτεῖ.</p>
+          </div>
+          <div class="column" style="background-color:#bbb;">
+            <p>While you live, shine</p>
+            <p>have no grief at all</p>
+            <p>life exists only for a short while</p>
+            <p>and time demands its toll.</p>
+          </div>
+        
         <div class="text">Seikilos Epitaph</div>
+        </div>
       </div>
       
       <div class="mySlides fade">
         <div class="numbertext">2 / 3</div>
         <iframe width="1020" height="550" src="https://www.youtube.com/embed/zWkzM5p-ydk">
         </iframe>
+        <div class="row">
+          <div class="column" style="background-color:#aaa;">
+            <p>Χιονοβλεφάρου πάτερ Αούς,</p>
+            <p>ροδόεσσαν ος άντυγα πώλων</p>
+            <p>πτανοίς υπ” ίχνεσσι διώκεις,</p>
+            <p>χρυσέαισιν αγαλλόμενος κόμαις</p>
+            <p>περί νώτον απείριτον ουρανού</p>
+            <p>ακτίνα πολύστροφον αμπλέκων,</p>
+            <p>αίγλας πολυδερκέα παγάν</p>
+            <p>περί γαίαν άπασαν ελίσσων,</p>
+            <p>ποταμοί δε σέθεν πυρός αμβρότου</p>
+            <p>τίκτουσιν επήρατον αμέραν.</p>
+            <p>Σοι μεν χορός εύδιος αστέρων</p>
+            <p>κατ” Όλυμπον άνακτα χορεύει</p>
+            <p>άνετον μέλος αιέν αείδων</p>
+            <p>Φοιβηίδι τερπόμενος λύρα.</p>
+            <p>Γλαυκά δε πάροιθε Σελάνα</p>
+            <p>χρόνον ώριον αγεμονεύει</p>
+            <p>λευκών υπό σύρμασι μόσχων,</p>
+            <p>γάνυται δέ τέ σοι νόος ευμενής</p>
+            <p>πολυείμονα κόσμον ελίσσων.</p>
+          </div>
+
+          <div class="column" style="background-color:#bbb;">
+            <p>Father of the Dawn with her snow-white eyelids,</p>
+            <p>You who follow in Your rose-pink chariot</p>
+            <p>the track of your flying steeds,</p>
+            <p>exulting in the gold of Your hair,</p>
+            <p>twining Your darting rays</p>
+            <p>across the boundless vault of sky,</p>
+            <p>whirling around the whole earth</p>
+            <p>the thread of Your all-seeing beams,</p>
+            <p>while flowing rivers of Your deathless fire</p>
+            <p>beget the lovely day.</p>
+            <p>For You the peaceful chorus of stars</p>
+            <p>dance their measure across Olympos their Lord,</p>
+            <p>forever singing their leisured song,</p>
+            <p>rejoicing in the music of Apollo’s lyre;</p>
+            <p>and leading them the silvery-grey Moon</p>
+            <p>marshals the months and seasons,</p>
+            <p>drawn by Her team of milk-white heifers.</p>
+            <p>And Your benevolent mind rejoices</p>
+            <p>as it whirls around the manifold raiment of the universe.</p>
+          </div>
+        </div>
         <div class="text">Hymn to the Sun</div>
       </div>
       
